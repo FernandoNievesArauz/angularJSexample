@@ -1,0 +1,14 @@
+<form ng-submit="itemDetailsController.EditItem(itemDetailsController.item)">
+
+    <label for="title">Title: </label>
+    <p><input class="form-control" ng-model="itemDetailsController.item.Title" type="text" required></p>
+    <label for="title">Description: </label>
+    <p><input class="form-control" ng-model="itemDetailsController.item.Description" type="textarea" required></p>
+    <label for="title">Due Date: </label>
+    <p><input class="form-control" ng-model="itemDetailsController.item.DueDate" type="datetime" required></p>
+    <label for="title">Priority: </label>
+    <p><input class="form-control" ng-model="itemDetailsController.item.PriorityId" type="number" required></p>
+
+    <button type="submit" class="btn btn-success pull-right">Update Item</button>
+
+</form>

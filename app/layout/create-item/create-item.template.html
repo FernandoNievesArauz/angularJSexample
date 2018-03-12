@@ -1,0 +1,22 @@
+<div ng-cloak class="container">
+    <form ng-submit="createItemController.CreateItem(createItemController.item)">
+
+        <label for="title">Title: </label>
+        <p><input class="form-control" ng-model="createItemController.item.Title" type="text" required></p>
+        <label for="title">Description: </label>
+        <p><input class="form-control" ng-model="createItemController.item.Description" type="textarea" required></p>
+        <label for="title">Due Date: </label>
+        <p><input class="form-control" ng-model="createItemController.item.DueDate" type="datetime" required></p>
+        <label for="title">Priority: </label>
+        <p><input class="form-control" ng-model="createItemController.item.PriorityId" type="number" required></p>
+        
+        <span class="input-group-btn">
+            <button type="submit" class="btn btn-success btn-center">Add Item</button>
+        </span>
+    </form>
+
+    <p><span>{{ createItemController.item.Title }}</span></p>
+    <p><span>{{ createItemController.item.Description }}</span></p>
+    <p><span>{{ createItemController.item.DueDate }}</span></p>
+    <p><span>{{ createItemController.item.PriorityId }}</span></p>
+</div>

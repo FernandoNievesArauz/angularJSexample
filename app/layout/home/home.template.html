@@ -1,0 +1,11 @@
+<div ng-cloak class="container main-list">
+    <ul>
+        <li ng-repeat="item in homeController.items">
+            <span>Title: <strong><a href="#!/items?id={{ item.Id }}">{{ item.Title }}</a></strong></span>
+        </li>
+    </ul>
+
+    <a class="btn btn-warning" ng-href="#!/items/create">Create Item</a>
+
+</div>
+

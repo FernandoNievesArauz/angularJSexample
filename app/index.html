@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="testApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="app.css">
+    <link rel = "stylesheet" href = "../bower_components/angular-material/angular-material.css">
+    <link rel = "stylesheet" href = "../bower_components/bootstrap/dist/css/bootstrap.css">
+
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../bower_components/angular-aria/angular-aria.js"></script>
+    <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="../bower_components/angular-messages/angular-messages.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/angular-touch/angular-touch.js"></script>
+    <script src="../bower_components/angular-aria/angular-aria.js"></script>
+    <script src="../bower_components/angular-material/angular-material.js"></script>
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="./app.module.js"></script>
+    <script src="./app.routes.js"></script>
+    <script src="./layout/layout.module.js"></script>
+    <script src="./core/core.module.js"></script>
+    <script src="./core/item/item.module.js"></script>
+    <script src="./core/item/item.factory.js"></script>
+    <script src="./layout/home/home.module.js"></script>
+    <script src="./layout/home/home.component.js"></script>
+    <script src="./layout/home/home.controller.js"></script>
+    <script src="./layout/item-details/item-details.module.js"></script>
+    <script src="./layout/item-details/item-details.controller.js"></script>
+    <script src="./layout/item-details/item-details.component.js"></script>
+    <script src="./layout/create-item/create-item.module.js"></script>
+    <script src="./layout/create-item/create-item.controller.js"></script>
+    <script src="./layout/create-item/create-item.component.js"></script>
+    <script src="./layout/navbar/navbar.module.js"></script>
+    <script src="./layout/navbar/navbar.component.js"></script>
+    <!-- endbuild -->
+    
+    <title>Test App</title>
+</head>
+<body ng-cloak>
+
+    <navbar></navbar>
+
+    <div class="view-panel" ng-view></div>
+    
+    
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    
+</body>
+</html>

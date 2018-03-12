@@ -1,0 +1,13 @@
+<div ng-cloak class="container" ng-switch="itemDetailsController.option">
+    <div ng-switch-default="view">
+        <div view-item></div>
+    </div>
+
+    <div ng-switch-when="edit">
+        <div edit-item></div>
+    </div>
+
+    <a class="btn btn-warning" ng-href="#!/home">Back to list</a>
+    <a class="btn btn-info" ng-click="itemDetailsController.ChangeDirective()">{{ itemDetailsController.optionName }}</a>
+
+</div>
